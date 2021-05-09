@@ -129,3 +129,5 @@ and http://localhost:8081/contributors/shivamgarg7276/graal-spring-native will r
     ...
 ]
 ```
+
+You need to run `mvn clean install` to build the entire project
