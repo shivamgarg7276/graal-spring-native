@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Graal Github Application (with AOT)
+  jackson:
+    default-property-inclusion: non_empty
+
+#github:
+#  token: user:placeholder
+server:
+  port: 8081
