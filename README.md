@@ -101,7 +101,7 @@ http://localhost:8080/users/{githubUserName} and http://localhost:8080/contribut
 `spring-boot-with-aot` service has two same REST endpoints which will accept HTTP GET requests at 
 http://localhost:8081/users/{githubUserName} and http://localhost:8081/contributors/{githubOrgName}/{githubRepoName}
 
-As an exaample, http://localhost:8081/users/shivamgarg7276 will responsd with a JSON representation of a Github User, as follows - 
+As an example, http://localhost:8081/users/shivamgarg7276 will responsd with a JSON representation of a Github User, as follows - 
 
 ```
 {
