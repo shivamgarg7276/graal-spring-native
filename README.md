@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/49524850/117565944-96d30f80-b0d1-11eb-
 
 # Install GraalVM with SDKMAN
 
-Let's install GraalVM with the help of SDKMAN. Therefore you need to [have SDKMAN itself installed](https://sdkman.io/install):
+Let's install GraalVM with the help of SDKMAN. Therefore, you need to [install SDKMAN itself](https://sdkman.io/install):
 
 ```
 curl -s "https://get.sdkman.io" | bash
@@ -48,13 +48,14 @@ Available Java Versions
 ...
 ```
 
-Now to install GraalVM based on JDK11, simply run:
+Now to install GraalVM based on JDK8, simply run:
 
 ```
 sdk install java 21.0.0.2.r8-grl
 ``` 
 
-SDKMAN now installs GraalVM for us. To have the correct `PATH` configuration in place, you may need to restart your console. If everything went fine, you should see `java -version` react like this:
+SDKMAN now installs GraalVM for us.
+To have the correct `PATH` configuration in place, you may need to restart your console. If everything went fine, you should see `java -version` react like this:
 
 ```
 $ java -version
@@ -64,10 +65,9 @@ OpenJDK 64-Bit Server VM GraalVM CE 21.0.0.2 (build 25.282-b07-jvmci-21.0-b06, m
 ```
 
 
-
 ### Install GraalVM Native Image
 
-GraalVM brings a special tool `gu` - the GraalVM updater. To list everything thats currently installed, run
+GraalVM brings a special tool `gu` - the GraalVM updater. To list everything that is currently installed, run
 
 ```
 $ gu list
