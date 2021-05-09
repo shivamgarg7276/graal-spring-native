@@ -88,3 +88,44 @@ After that, the `native-image` command should work for you:
 $ native-image --version
 GraalVM Version 21.0.0.2 (Java Version 1.8.0_282-b07)
 ```
+
+# Build the Project
+
+This project has two Spring Boot modules - 
+- spring-boot-without-aot
+- spring-boot-with-aot
+
+`spring-boot-without-aot` service has two REST endpoints which will accept HTTP GET requests at 
+http://localhost:8080/users/{githubUserName} and http://localhost:8080/contributors/{githubOrgName}/{githubRepoName}
+
+`spring-boot-with-aot` service has two same REST endpoints which will accept HTTP GET requests at 
+http://localhost:8081/users/{githubUserName} and http://localhost:8081/contributors/{githubOrgName}/{githubRepoName}
+
+As an exaample, http://localhost:8081/users/shivamgarg7276 will responsd with a JSON representation of a Github User, as follows - 
+
+```
+{
+    "login": "shivamgarg7276",
+    "name": "Shivam Garg",
+    "company": "Nutanix",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/49524850?v=4",
+    "blogUrl": "https://www.linkedin.com/in/shivam-garg-067b46141/",
+    "numPublicRepos": 1,
+    "htmlUrl": "https://github.com/shivamgarg7276"
+}
+```
+
+and http://localhost:8081/contributors/shivamgarg7276/graal-spring-native will respond with a list of Github Contributors -
+
+```
+[
+    {
+        "login": "shivamgarg7276",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49524850?v=4",
+        "numContributions": 6,
+        "htmlUrl": "https://github.com/shivamgarg7276"
+    },
+    ...
+    ...
+]
+```
