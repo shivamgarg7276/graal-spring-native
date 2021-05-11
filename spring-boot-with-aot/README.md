@@ -1,6 +1,6 @@
 # Build the module
 
-You can build the module simple by using this command -  
+You can build the module simply by using this command -  
 `mvn -Pnative-image clean package`
 
 This will create a native executable comprising the Spring Boot application under the `target` folder of the module.  
