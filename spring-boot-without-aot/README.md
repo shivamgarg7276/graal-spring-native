@@ -1,6 +1,6 @@
 # Build the module
 
-You can build the module simple by using this command -  
+You can build the module simply by using this command -  
 `mvn clean install`
 
 Once the build succeeds, run -  
