@@ -9,6 +9,9 @@
 
 This example project shows a Spring Boot application without AOT, and then convert it to a Native Image using GraalVM Native Image plugin clubbed with Spring Native AOT.
 
+**Checkout the Medium article corresponding to this repository here -  
+https://shivamgarg-21387.medium.com/spring-boot-application-with-graalvm-native-image-8074034ba35f**
+
 
 https://user-images.githubusercontent.com/49524850/117565944-96d30f80-b0d1-11eb-8690-e7b39801c197.mov
 
@@ -130,3 +133,6 @@ and http://localhost:8081/contributors/shivamgarg7276/graal-spring-native will r
 ]
 ```
 
+# Comaprison with Micronaut
+
+For comparison with Micronaut, checkout https://github.com/shivamgarg7276/graal-micronaut
